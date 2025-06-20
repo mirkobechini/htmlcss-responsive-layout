@@ -1,0 +1,335 @@
+/* Generics */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+/* Utilities */
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+/* Buttons */
+
+.btn {
+	border: 0;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 15px;
+	border-radius: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+.btn-orange {
+	color: #fff;
+	background-color: #f7972e;
+}
+
+/*  HEADER  */
+
+#topbar {
+	height: 70px;
+	padding: 0 20px;
+	background-color: #fff;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#logo {
+	color: #ff9614;
+	font-size: 3em;
+	text-decoration: none;
+	font-family: 'Nerko One', cursive;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* MAIN */
+
+main {
+	background-color: #f6f5f3;
+	padding: 20px;
+	min-height: calc(100vh - 70px);
+}
+
+/* ADS */
+.ads {
+	display: none;
+	margin: 30px auto;
+}
+
+.ads img {
+	max-width: 100%;
+}
+
+/************* RECIPE *************/
+
+/* Recipe header */
+
+.recipe header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 20px;
+}
+
+.recipe-title {
+	width: 85%;
+}
+
+.recipe-origin {
+	display: none;
+}
+
+.recipe-rating {
+	width: 15%;
+	min-width: 150px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.fa-star {
+	color: #f7972e;
+}
+
+.recipe-category {
+	color: #999;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.recipe-name {
+	color: #4e3969;
+	font-weight: 800;
+}
+
+/* Recipe Card */
+.recipe-card {
+	background-color: white;
+
+	border-radius: 3px;
+	box-shadow: 0 5px 10px rgb(45 34 60 / 12%);
+
+	margin-bottom: 30px;
+}
+
+.recipe-video {
+	height: 50vw;
+}
+
+.recipe-video iframe {
+	border: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* Recipe Information */
+
+.recipe-info {
+	padding: 30px;
+}
+
+.well {
+	padding: 15px;
+	background-color: #f6f5f9;
+}
+
+.well hr {
+	border: 0;
+	height: 1px;
+	margin: 15px 0;
+	background-color: #dedede;
+}
+
+.top-well {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bottom-well {
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.calories {
+	font-size: 13px;
+}
+
+.badge {
+	color: #fff;
+	background-color: #7b69a2;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 2px 5px;
+	border-radius: 3px;
+}
+
+.info {
+	color: #f7972e;
+	font-weight: bold;
+}
+
+/* Quick Notes */
+
+.quick-notes {
+	margin-top: 30px;
+}
+
+.quick-notes li {
+	font-size: 14px;
+	margin: 15px 0;
+	list-style-type: none;
+}
+
+.quick-notes li::before {
+	color: #f7972e;
+	font-weight: 900;
+	margin-right: 5px;
+	font-family: 'Font Awesome 5 Free';
+}
+
+.blender::before {
+	content: '\f517';
+}
+
+.clock::before {
+	content: '\f017';
+}
+
+.cost::before {
+	content: '\f153';
+}
+
+.pie::before {
+	content: '\f200';
+}
+
+.utensils::before {
+	content: '\f2e7';
+}
+
+.pin::before {
+	content: '\f08d';
+}
+
+/*  SOCIAL NETWORKS */
+
+.social-networks {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 10px;
+}
+
+.social-networks button {
+	box-shadow: 0 5px 10px rgb(45 34 60 / 12%);
+}
+
+.social-networks .label {
+	display: none;
+}
+
+.fa-facebook {
+	color: #1a77f3;
+}
+.fa-twitter {
+	color: #009eff;
+}
+
+.fa-pinterest,
+.fa-youtube {
+	color: #e62222;
+}
+
+.fa-instagram {
+	color: #dc3d78;
+}
+
+/* PRESENTATION */
+
+.presentation {
+	margin: 30px 0;
+}
+
+.presentation h3 {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+.presentation hr {
+	width: 80px;
+	border: 0;
+	height: 2px;
+	background-color: #f7972e;
+	margin-top: 10px;
+}
+
+.presentation p {
+	margin-top: 20px;
+	line-height: 2rem;
+}
+
+.presentation img {
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	box-shadow: 0 5px 10px rgb(45 34 60 / 12%);
+}
+
+/* FOOTER */
+
+footer {
+	padding: 20px;
+	min-height: 80px;
+	font-size: 0.8rem;
+	color: #fff;
+	background-color: #7c69a4;
+	text-align: center;
+}
+
+address {
+	font-style: normal;
+	line-height: 1.5rem;
+}
+
+footer ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+footer li {
+	margin: 10px;
+}
+
+footer a {
+	color: white;
+}

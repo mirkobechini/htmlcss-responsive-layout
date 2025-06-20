@@ -1,0 +1,26 @@
+/* #region Desktop (sopra 992px) */
+
+@media screen and (min-width: 992px) {
+
+    /* #region Header*/
+
+    #topbar{
+        justify-content: flex-start;
+    }
+
+    /* #endregion Header*/
+
+    /* #region Main*/
+    .recipe-origin{
+        display: inline;
+    }
+
+   
+    /* #endregion Main*/
+
+    /* #region Footer*/
+
+    /* #endregion Footer*/
+}
+
+/* #endregion Desktop (sopra 992px) */
