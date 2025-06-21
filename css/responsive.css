@@ -1,6 +1,6 @@
-/* #region Desktop (sopra 992px) */
+/* #region Tablet (sopra 768px) */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 
     /* #region Header*/
 
@@ -10,12 +10,72 @@
 
     /* #endregion Header*/
 
+
     /* #region Main*/
+
+    main {
+        padding: 3rem;
+    }
+
     .recipe-origin {
         display: inline;
     }
-    .recipe-name{
+
+    .recipe-name {
         font-size: 32px;
+    }
+
+    .quick-notes>ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            padding: 0 2rem;
+            max-width: 40%;
+        }
+
+    }
+
+    .social-networks {
+
+        .btn {
+            padding: 0.5rem 3rem;
+        }
+    }
+
+    .ads {
+        display: block;
+    }
+
+    .clearfix {
+        img {
+            display: inline;
+            float: left;
+            margin-right: 0.75rem;
+
+        }
+
+    }
+
+    /* #endregion Main*/
+
+
+    /* #region Footer*/
+
+    /* #endregion Footer*/
+
+}
+
+/* #endregion Tablet (sopra 768px) */
+
+
+/* #region Desktop (sopra 992px) */
+@media screen and (min-width: 992px) {
+
+    /* #region Main*/
+
+    .recipe-name {
+        font-size: 36px;
     }
 
     .recipe-card {
@@ -35,24 +95,12 @@
         .label {
             display: inline;
         }
-        .btn{
-            padding: 0.5rem 2.5rem;
-        }
-    }
-
-    .ads{
-        display: block;
-    }
-
-    .clearfix{
-        img{
-            display: inline;
-            float: left;
-            margin-right: 0.75rem;
-            
-        }
 
     }
+
+
+
+
 
 
 
@@ -61,17 +109,19 @@
 
     /* #region Footer*/
 
-    footer{
+    footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        address{
+
+        address {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             line-height: 0.75rem;
         }
     }
+
     /* #endregion Footer*/
 }
 
