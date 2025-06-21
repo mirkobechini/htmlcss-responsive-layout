@@ -40,6 +40,10 @@
         }
     }
 
+    .ads{
+        display: block;
+    }
+
     .clearfix{
         img{
             display: inline;
