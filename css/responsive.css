@@ -87,7 +87,16 @@
         }
 
         .recipe-info {
-            width: 30%
+            width: 30%;
+
+            .quick-notes ul {
+                display: inline;
+
+                li {
+                    padding: 0;
+                    max-width: 100%;
+                }
+            }
         }
     }
 
@@ -96,13 +105,11 @@
             display: inline;
         }
 
+        .btn {
+            padding: 0.5rem 2rem;
+        }
+
     }
-
-
-
-
-
-
 
 
     /* #endregion Main*/
@@ -124,5 +131,12 @@
 
     /* #endregion Footer*/
 }
+
+/* #endregion Desktop (sopra 992px) */
+
+
+
+
+/* #region Mobile (sopra 992px) */
 
 /* #endregion Desktop (sopra 992px) */
