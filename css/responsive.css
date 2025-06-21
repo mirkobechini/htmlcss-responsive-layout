@@ -4,18 +4,39 @@
 
     /* #region Header*/
 
-    #topbar{
+    #topbar {
         justify-content: flex-start;
     }
 
     /* #endregion Header*/
 
     /* #region Main*/
-    .recipe-origin{
+    .recipe-origin {
         display: inline;
     }
 
-   
+    .recipe-card {
+        display: flex;
+
+        .recipe-video {
+            width: 70%;
+            height: 40vw;
+        }
+
+        .recipe-info {
+            width: 30%
+        }
+    }
+
+    .social-networks {
+        .label {
+            display: inline;
+        }
+        .btn{
+            padding: 0.5rem 2.5rem;
+        }
+    }
+
     /* #endregion Main*/
 
     /* #region Footer*/
