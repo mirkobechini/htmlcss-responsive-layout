@@ -37,6 +37,19 @@
         }
     }
 
+    .clearfix{
+        img{
+            display: inline;
+            float: left;
+            margin-right: 0.75rem;
+            
+        }
+
+    }
+
+
+
+
     /* #endregion Main*/
 
     /* #region Footer*/
