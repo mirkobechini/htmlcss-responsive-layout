@@ -14,6 +14,9 @@
     .recipe-origin {
         display: inline;
     }
+    .recipe-name{
+        font-size: 32px;
+    }
 
     .recipe-card {
         display: flex;
