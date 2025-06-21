@@ -35,26 +35,8 @@
         }
 
     }
-
-    .social-networks {
-
-        .btn {
-            padding: 0.5rem 3rem;
-        }
-    }
-
     .ads {
         display: block;
-    }
-
-    .clearfix {
-        img {
-            display: inline;
-            float: left;
-            margin-right: 0.75rem;
-
-        }
-
     }
 
     /* #endregion Main*/
@@ -105,10 +87,6 @@
             display: inline;
         }
 
-        .btn {
-            padding: 0.5rem 2rem;
-        }
-
     }
 
 
@@ -137,6 +115,31 @@
 
 
 
-/* #region Mobile (sopra 992px) */
+/* #region Large Mobile (sopra 576px) */
 
-/* #endregion Desktop (sopra 992px) */
+@media screen and (min-width: 576px) {
+
+    .social-networks {
+        flex-wrap: nowrap;
+        gap: 6px;
+        .btn {
+            flex: 1 1 0;
+            min-width: 0;
+            padding: 0.5rem 0.75rem;
+        }
+    }
+
+
+    .clearfix {
+        img {
+            display: inline;
+            float: left;
+            margin-right: 0.75rem;
+
+        }
+
+    }
+
+}
+
+/* #endregion Large Mobile (sopra 576px) */
